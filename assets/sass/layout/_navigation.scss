@@ -1,0 +1,86 @@
+.navigation {
+    width: 100%;
+    max-width: 95rem;
+    padding: 0 3.5rem;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &__list {
+        list-style: none;
+
+        @include respond(desktop-screen) {
+
+            display: block;
+        }
+
+        @include respond(medium-mobile-screen) {
+            --gap: 2rem;
+            position: fixed;
+            inset: 0 30% 0 0;
+            display: flex;
+            flex-direction: column;
+            padding-top: min(10vh);
+            padding-bottom: min(10vh);
+            padding-left: 6rem;
+            padding-right: 6rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(1rem);
+            z-index: 999;
+            transform: translateX(-100%);
+            transition: transform .4s ease-in-out;
+            visibility: hidden;
+
+        }
+    }
+
+    &__list[data-visable="true"] {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        
+    }
+
+    &__item {
+        display: inline-block;
+        &:not(:last-child) {
+            padding-right: 2.4rem;
+        }
+    }
+    &__link {
+        color: $color-primary;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover {
+            @include respond(desktop-screen) {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__toggle {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%); 
+       left: 3rem;
+       background-image: url('../../assets/images/icons/i-hamburger.png');
+       
+       background-color: transparent;
+       z-index: 99999;
+       border: none;
+       display: none;
+       @include respond(medium-mobile-screen) {
+        display: block;
+        }
+       
+    }
+
+    &__toggle[aria-expanded="true"] {
+        background-image: url('../../assets/images/icons/i-cross.png');
+        background-size: contain;
+        height: 3rem;
+        background-repeat: no-repeat;
+    }
+}

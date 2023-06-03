@@ -1,0 +1,20 @@
+.align-right {
+    text-align: right;
+    @include respond(medium-mobile-screen) {
+        text-align: left;
+    }
+}
+.align-only-right {
+    text-align: right;
+}
+
+.mt-small {
+    margin-top: 2.8rem;
+}
+.mb-medium {
+    margin-bottom: 5rem;
+}
+.sr-only {
+    opacity: 0;
+    visibility: hidden;
+}

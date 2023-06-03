@@ -1,0 +1,21 @@
+.accordion {
+    &__panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        padding-top: 2.6rem;
+        &.open {
+            height: auto;
+        }
+    }
+    &__icon {
+        width: 2.4rem;
+        height: auto;
+        transform: rotate(0deg);
+        transition: transform 0.3s linear;
+
+        &.open {
+            transform: rotate(-180deg);
+        }
+    }
+}

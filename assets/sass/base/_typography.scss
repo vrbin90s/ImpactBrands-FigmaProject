@@ -1,0 +1,47 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-primary;
+}
+
+.heading-2 {
+    font-size: 5rem;
+    line-height: 6.3rem;
+    text-align: center;
+    color: $color-primary;
+    font-weight: 800;
+
+    span {
+        color: $color-tertiary;
+    }
+}
+
+.heading-3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $color-primary;
+    text-align: center;
+
+    &--white {
+        color: $color-white;
+    }
+    &--margin {
+        margin: 4rem 0;
+    }
+}
+
+.heading-4 {
+    font-weight: 600;
+}
+
+.heading-5 {
+    font-size: $default-font-size;
+}
+
+p {
+    font-size: $default-font-size;
+    line-height: 2rem;
+    font-weight: 400;
+}

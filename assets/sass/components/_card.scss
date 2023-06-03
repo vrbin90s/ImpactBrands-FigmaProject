@@ -1,0 +1,32 @@
+.card {
+    background-color: $color-secondary;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 21.3rem;
+
+    @include respond(small-mobile-screen) {
+        max-width: 100%;
+    }
+
+    &:nth-of-type(2) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &__content {
+        word-wrap: normal;
+        @include respond(desktop-screen) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        @include respond(tablet-screen) {
+            text-align: center;
+        }
+    }
+}
