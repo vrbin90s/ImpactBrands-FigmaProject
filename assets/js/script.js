@@ -24,7 +24,7 @@ const accordionList = document.querySelectorAll('.btn__accordion');
 
 accordionList.forEach((accordionButton, index) => {
   const iconWrapper = createHTMLElement({ element: 'span', className: 'accordion__icon-wrapper'});
-  const icon = createHTMLElement({ element: 'img', className: 'accordion__icon', src: '../assets/images/icons/i-angle-left.png' });
+  const icon = createHTMLElement({ element: 'img', className: 'accordion__icon', src: './assets/images/icons/i-angle-left.png' });
   iconWrapper.append(icon);
 
   const panel = accordionButton.nextElementSibling;
