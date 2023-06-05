@@ -17,6 +17,12 @@
         }
     }
 
+    @if $breakpoint == large-mobile-screen-reverse {
+        @media (min-width: 600px) {
+            @content;
+        }
+    }
+
     @if $breakpoint == tablet-screen {
         @media (max-width: 768px) {
             @content;
