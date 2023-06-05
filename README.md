@@ -7,6 +7,9 @@ The design of the landing page showcases a visually captivating layout consistin
 1. Clone / Download Repository - https://github.com/vrbin90s/ImpactBrands-FigmaProject.git
 2. Run index.html file in your browser to interact with the landing page.
 
+ot to view the the completed page just follow this link: 
+https://vrbin90s.github.io/ImpactBrands-FigmaProject/
+
 # Important notes
 
 In this project you will find my custom composer file that can be used to compile SASS files and run live server for development.
