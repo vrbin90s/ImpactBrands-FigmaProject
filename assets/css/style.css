@@ -530,11 +530,12 @@ p {
         margin-bottom: 3rem;
         width: 13.3rem; } }
   .certified__text {
-    width: 40%; }
+    padding: 0 3rem; }
+    .certified__text span {
+      display: block; }
     @media (max-width: 393px) {
       .certified__text {
-        width: 100%;
-        text-align: center; } }
+        font-size: 1.4rem; } }
 
 .products {
   background-color: #F9E8E7; }

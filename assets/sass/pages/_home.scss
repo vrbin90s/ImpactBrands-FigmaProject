@@ -245,11 +245,14 @@
     }
 
     &__text {
-        width: 40%;
+        
+        padding: 0 3rem;
+        span {
+            display: block;
+        }
 
         @include respond(small-mobile-screen) {
-            width: 100%;
-            text-align: center;
+            font-size: 1.4rem;
         }
     }
 }
