@@ -66,11 +66,12 @@
        transform: translateY(-50%); 
        left: 3rem;
        background-image: url('../../assets/images/icons/i-hamburger.png');
-       
+       cursor: pointer;
        background-color: transparent;
        z-index: 99999;
        border: none;
        display: none;
+       
        @include respond(medium-mobile-screen) {
         display: block;
         }
