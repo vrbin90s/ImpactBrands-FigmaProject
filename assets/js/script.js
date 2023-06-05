@@ -1,5 +1,3 @@
-import createHTMLElement from "./function.js";
-
 // Mobile Navigation
 function mobileMenu() {
   const primaryNavigation = document.querySelector('.navigation__list');
@@ -48,4 +46,30 @@ accordionList.forEach((accordionButton, index) => {
 
   })
 });
+
+// Helper function to create new DOM Elements.
+// normally I would store these types of functions in my helper.js file
+// and import them than required
+function createHTMLElement(options) {
+  const { element, text, className, src } = options;
+
+  const newDomElement = document.createElement(element);
+
+  if (text) {
+      newDomElement.textContent = text;
+  }
+
+  if (className) {
+      if (Array.isArray(className)) {
+          className.forEach((cn) => newDomElement.classList.add(cn));
+      } else {
+          newDomElement.classList.add(className);
+      }
+  }
+  if (src) {
+      newDomElement.src = src;
+  }
+
+  return newDomElement;
+}
 
